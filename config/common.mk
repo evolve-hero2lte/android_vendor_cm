@@ -97,6 +97,14 @@ endif
 #PRODUCT_PACKAGES += \
 #    bootanimation.zip
 
+# Magisk Manager
+PRODUCT_PACKAGES += \
+    MagiskManager
+
+# Copy Magisk zip
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/zip/magisk.zip:system/addon.d/magisk.zip
+ 
 # Required CM packages
 PRODUCT_PACKAGES += \
     BluetoothExt \
