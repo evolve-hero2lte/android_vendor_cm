@@ -104,6 +104,10 @@ PRODUCT_PACKAGES += \
 # Copy Magisk zip
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/zip/magisk.zip:system/addon.d/magisk.zip
+	
+# Substratum Verified
+PRODUCT_PROPERTY_OVERRIDES := \
+    ro.substratum.verified=true	
  
 # Required CM packages
 PRODUCT_PACKAGES += \
