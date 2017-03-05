@@ -1,4 +1,4 @@
-PRODUCT_BRAND ?= Mithra
+PRODUCT_BRAND ?= Evolve
 
 PRODUCT_BOOTANIMATION := vendor/cm/prebuilt/common/bootanimation/bootanimation.zip
 
@@ -238,21 +238,21 @@ PRODUCT_VERSION_MAJOR = 7
 PRODUCT_VERSION_MINOR = 1
 PRODUCT_VERSION_MAINTENANCE := 1
 
-# Setup default Mithra version
-MITHRA_VERSION :=BETA
-LINEAGE_VERSION := Mithra-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)-$(shell date -u +%Y%m%d)-$(CM_BUILD)
-CM_DISPLAY_VERSION := Mithra-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)-$(shell date -u +%Y%m%d)-$(MITHRA_VERSION)
+# Setup default Evolve version
+Evolve_VERSION :=BETA
+LINEAGE_VERSION := Evolve-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)-$(shell date -u +%Y%m%d)-$(CM_BUILD)
+CM_DISPLAY_VERSION := Evolve-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)-$(shell date -u +%Y%m%d)-$(EVOLVE_VERSION)
 
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.mithra.version=$(LINEAGE_VERSION) \
+    ro.evolve.version=$(LINEAGE_VERSION) \
     ro.modversion=$(LINEAGE_VERSION) \
 
 PRODUCT_EXTRA_RECOVERY_KEYS += \
     vendor/cm/build/target/product/security/lineage
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.mithra.display.version=$(CM_DISPLAY_VERSION)
+    ro.evolve.display.version=$(CM_DISPLAY_VERSION)
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/cm/config/partner_gms.mk
